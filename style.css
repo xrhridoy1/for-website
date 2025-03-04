@@ -1,0 +1,13 @@
+body{
+  background-color: antiquewhite;
+}
+.margin{
+  margin-left: 20px;
+}
+P{
+  border: 1px solid black ;
+  padding: 5px;
+  background-color: rgb(13, 204, 140);
+  text-align: justify;
+  width: fit-content;
+}
