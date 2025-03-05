@@ -1,5 +1,7 @@
 body{
   background-color: antiquewhite;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .margin{
   margin-left: 20px;
@@ -10,4 +12,35 @@ P{
   background-color: rgb(13, 204, 140);
   text-align: justify;
   width: fit-content;
+}
+ul{
+  background-color: bisque;
+  width: fit-content;
+}
+li::first-letter{
+  text-transform: uppercase;
+  color: rgb(0, 132, 255);
+}
+p::first-line{
+  color: rgb(138, 14, 255);
+  text-transform: uppercase;
+  padding: 5px;
+}
+.link:link {
+  color: rgb(0, 255, 42);
+  padding: 5px;
+}
+}
+.link:visited{
+  color: rgb(0, 255, 42);
+}
+.link:hover{
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+}
+.link:active {
+  border: 2px solid green;
+  background-color: white;
+  border-radius: 10px;
+  vertical-align: cenler;
 }
