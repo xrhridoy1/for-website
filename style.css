@@ -12,39 +12,39 @@ P{
   background-color: rgb(13, 204, 140);
   text-align: justify;
   width: fit-content;
+  border-radius: 10px;
 }
 ul{
   background-color: bisque;
-  width: fit-content;
+  width:200px;
+  border-radius: 10px;
+  padding: 9px 0 0 25px;
 }
-li::first-letter{
-  text-transform: uppercase;
-  color: rgb(0, 132, 255);
-}
+
 p::first-line{
   color: rgb(138, 14, 255);
   text-transform: uppercase;
   padding: 5px;
 }
-
-a:link {
-  color: #FF0000;
+a{
+  margin-left: 15px;
 }
-a:visited {
-  color: #00FF00;
+a:link{
+  color: blueviolet;
 }
+a:visited{
+  color: blueviolet;
 
-/* mouse over link */
-a:hover {
-  color: #FF00FF;
 }
-
-/* selected link */
-a:active {
-  color: #002fff;
-  border: 2px solid green;
-  padding: 5px;
-  border-radius: 10px;
+a:active{
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 3px;
+}
+a:hover{
+  color: palevioletred;
 }
 
 #user:focus{
@@ -59,20 +59,17 @@ li:nth-child(2n+1){
 }
 table{
   
-  
+  border-collapse: collapse;
   text-align: center;
 
 }
 td,th{
-  border: 1px solid rgb(255, 0, 0);
+  border: 1px solid rgb(136, 3, 3);
   padding: 5px;
 }
-.data:nth-child(2n+1){
-  background-color: gray;
 
-}
 tr:nth-child(2n){
-  background-color: green;
+  background-color: #6d726d;
 }
 h1:hover{
   font-size: 40px;
@@ -80,16 +77,52 @@ h1:hover{
   width: max-content;
   border-radius: 10px;
   padding: 4px;
+  cursor: pointer;
 }
 ul li:hover{
   font-size: 30px;
   cursor: pointer;
 }
 .margin:hover{
-  font-size: 18px;
-  width: 100px;
+  font-size: 23px;
+  cursor: pointer;
+}
+p::first-line:hover{
+  font-size: 23px;
+
 }
 ::selection{
   background-color: yellow;
   color: rgb(223, 122, 28);
+}
+input:optional {
+  background-color: rgb(185, 176, 176);
+}
+input:required{
+  background-color: pink;
+  border-color: rgb(89, 156, 2);
+  bor
+}
+.req{
+  color: red;
+}
+th{
+  background-color: #6d726d;
+}
+body{
+  counter-reset: section;
+}
+.line{
+  background-color: white;
+  border: none;
+}
+.line::before{
+  counter-increment: section;
+  content: counter(section) ":";
+}
+li::before{
+  content: " *";
+}
+.line:hover{
+  font-size: 23px;
 }
