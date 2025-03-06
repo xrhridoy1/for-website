@@ -8,11 +8,11 @@ body{
 }
 P{
   border: 1px solid black ;
+  border-radius: 10px;
   padding: 5px;
   background-color: rgb(13, 204, 140);
   text-align: justify;
   width: fit-content;
-  border-radius: 10px;
 }
 ul{
   background-color: bisque;
@@ -38,22 +38,20 @@ a:visited{
 }
 a:active{
   border: 1px solid rgb(0, 0, 0);
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgb(88, 37, 37);
   border-radius: 9px;
   padding: 2px;
 }
 a:hover{
-  color: palevioletred;
+  color: rgb(202, 80, 80);
 }
 
 #user:focus{
   color: darkblue;
   font-size: 25px;
 }
-#password{
-  border-bottom-right-radius: unset;
-}
+
 li:nth-child(2n+1){
   background-color:rgb(202, 194, 194) ;
 }
@@ -79,7 +77,7 @@ h1:hover{
   padding: 4px;
   cursor: pointer;
 }
-ul li:hover{
+li:hover{
   font-size: 30px;
   cursor: pointer;
 }
@@ -87,21 +85,12 @@ ul li:hover{
   font-size: 23px;
   cursor: pointer;
 }
-p::first-line:hover{
-  font-size: 23px;
-
-}
 ::selection{
   background-color: yellow;
   color: rgb(223, 122, 28);
 }
-input:optional {
-  background-color: rgb(185, 176, 176);
-}
 input:required{
-  background-color: pink;
-  border-color: rgb(89, 156, 2);
-  bor
+  border-color: rgb(255, 0, 0);
 }
 .req{
   color: red;
@@ -118,7 +107,7 @@ body{
 }
 .line::before{
   counter-increment: section;
-  content: counter(section) ":";
+  content: counter(section) ". ";
 }
 li::before{
   content: " *";
@@ -131,6 +120,9 @@ h3{
 }
 .container{
   background-color: aquamarine;
+  position: relative;
+
+  height: 90vh;
 }
 body{
   padding: 0;
@@ -141,15 +133,28 @@ div{
   height: 100px;
   padding: 5px 0 5px 5px;
 }
+#name{
+  position: sticky;
+  top: 10px;
+  margin-left: 50%;
+  bottom: 0px;
+}
 #first{
   background-color: blue;
 }
 #second{
   background-color: blueviolet;
+  position: sticky;
+  top: 5px;
+  margin-top: 0px;
+  left: 300px;
 }
 #third{
-  background-color: chartreuse;
-  position: relative;
+  background-color: rgb(255, 153, 0);
+  position: absolute;
+  left: 100px;
+
+  
   
 }
 #fourth{
@@ -160,9 +165,15 @@ img{
   position: fixed;
   bottom: 20px;
   right: 20px;
-  border-radius: 720px;
+  border-radius: 50%;
   cursor: pointer;
 }
 img:hover{
   width: 95px;
+  border-radius: 50%;
+}
+.section{
+  height: 550vh;
+  background-color: rgb(136, 136, 27);
+  margin-top: 10px;
 }
